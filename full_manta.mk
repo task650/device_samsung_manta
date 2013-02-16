@@ -26,38 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/manta/Alert-SonarMerge.mp3:system/media/audio/notifications/Alert-SonarMerge.mp3 \
     vendor/samsung/manta/CyanPing.ogg:system/media/audio/notifications/CyanPing.ogg \
     vendor/samsung/manta/apple_smsreceived.ogg:system/media/audio/notifications/apple_smsreceived.ogg \
-    vendor/samsung/manta/IphoneCellSoundMerge.mp3:system/media/audio/ringtones/IphoneCellSoundMerge.mp3
-
-# Copy Animation Files
-PRODUCT_COPY_FILES += \
-    vendor/samsung/manta/keyboard-anim/Bouncey.zip:system/addon.d/keyboard-anim/Bouncey.zip \
-    vendor/samsung/manta/keyboard-anim/Chaos.zip:system/addon.d/keyboard-anim/Chaos.zip \
-    vendor/samsung/manta/keyboard-anim/ChaosRevenge.zip:system/addon.d/keyboard-anim/ChaosRevenge.zip \
-    vendor/samsung/manta/keyboard-anim/Eternity.zip:system/addon.d/keyboard-anim/Eternity.zip \
-    vendor/samsung/manta/keyboard-anim/Flip.zip:system/addon.d/keyboard-anim/Flip.zip \
-    vendor/samsung/manta/keyboard-anim/Photon.zip:system/addon.d/keyboard-anim/Photon.zip \
-    vendor/samsung/manta/keyboard-anim/Spinner.zip:system/addon.d/keyboard-anim/Spinner.zip \
-    vendor/samsung/manta/keyboard-anim/Stock.zip:system/addon.d/keyboard-anim/Stock.zip \
-    vendor/samsung/manta/keyboard-anim/TeamDerpTheme.zip:system/addon.d/keyboard-anim/TeamDerpTheme.zip \
-    vendor/samsung/manta/keyboard-anim/ThePsynFlip.zip:system/addon.d/keyboard-anim/ThePsynFlip.zip \
-    vendor/samsung/manta/keyboard-anim/ThePsynShift.zip:system/addon.d/keyboard-anim/ThePsynShift.zip \
-    vendor/samsung/manta/keyboard-anim/TwistedRubik.zip:system/addon.d/keyboard-anim/TwistedRubik.zip \
-    vendor/samsung/manta/keyboard-anim/Vortex.zip:system/addon.d/keyboard-anim/Vortex.zip \
-    vendor/samsung/manta/window-anim/Bouncey.zip:system/addon.d/window-anim/Bouncey.zip \
-    vendor/samsung/manta/window-anim/Chaos.zip:system/addon.d/window-anim/Chaos.zip \
-    vendor/samsung/manta/window-anim/ChaosRevenge.zip:system/addon.d/window-anim/ChaosRevenge.zip \
-    vendor/samsung/manta/window-anim/Eternity.zip:system/addon.d/window-anim/Eternity.zip \
-    vendor/samsung/manta/window-anim/Flip.zip:system/addon.d/window-anim/Flip.zip \
-    vendor/samsung/manta/window-anim/Photon.zip:system/addon.d/window-anim/Photon.zip \
-    vendor/samsung/manta/window-anim/Stock.zip:system/addon.d/window-anim/Stock.zip \
-    vendor/samsung/manta/window-anim/TeamDerpTheme.zip:system/addon.d/window-anim/TeamDerpTheme.zip \
-    vendor/samsung/manta/window-anim/ThePsynFlip.zip:system/addon.d/window-anim/ThePsynFlip.zip \
-    vendor/samsung/manta/window-anim/ThePsynShift.zip:system/addon.d/window-anim/ThePsynShift.zip \
-    vendor/samsung/manta/window-anim/TwistedRubik.zip:system/addon.d/window-anim/TwistedRubik.zip \
-    vendor/samsung/manta/window-anim/Vortex.zip:system/addon.d/window-anim/Vortex.zip \
-    vendor/samsung/manta/window-anim/MIUI.zip:system/addon.d/window-anim/MIUI.zip \
-    vendor/samsung/manta/framework-flash.zip:system/addon.d/framework-flash.zip \
-    vendor/samsung/manta/com.aokp.animation.manager.apk:system/app/com.aokp.animation.manager.apk \
+    vendor/samsung/manta/IphoneCellSoundMerge.mp3:system/media/audio/ringtones/IphoneCellSoundMerge.mp3 \
     vendor/samsung/manta/com.aokp.ota.apk:system/app/com.aokp.ota.apk
 
 # Live Wallpapers
