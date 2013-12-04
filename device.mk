@@ -14,14 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/samsung/manta/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 PRODUCT_COPY_FILES := \
-    $(LOCAL_KERNEL):kernel \
     device/samsung/manta/init.manta.rc:root/init.manta.rc \
     device/samsung/manta/init.manta.usb.rc:root/init.manta.usb.rc \
     device/samsung/manta/init.recovery.manta.rc:root/init.recovery.manta.rc \
@@ -98,9 +91,6 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
-# Torch
-PRODUCT_PACKAGES += Torch
-
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
     NFCEE_ACCESS_PATH := device/samsung/manta/nfc/nfcee_access.xml
@@ -113,6 +103,7 @@ PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     device/samsung/manta/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
 PRODUCT_PACKAGES += \

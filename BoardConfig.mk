@@ -31,10 +31,14 @@ TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a15
+ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_ARCH_VARIANT_CPU := cortex-a15
 
-# Define kernel config for inline building
-TARGET_KERNEL_CONFIG := cyanogenmod_manta_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/manta
+# Enable various prefetch optimizations
+COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
+
+TARGET_KERNEL_SOURCE = kernel/samsung/manta
+TARGET_KERNEL_CONFIG = cyanogenmod_manta_defconfig
 
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -78,7 +82,7 @@ WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 
-BOARD_LIB_DUMPSTATE := libdumpstate.manta
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.manta libdumpstate.manta
 
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
